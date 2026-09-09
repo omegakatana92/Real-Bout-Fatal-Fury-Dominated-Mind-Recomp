@@ -1,0 +1,29 @@
+{
+  "cue_path": "C:\\Users\\omega\\Documents\\tools\\psxrecomp-cli-windows-x86_64\\game\\Real Bout Garou Densetsu Special - Dominated Mind (Japan)\\Real Bout Garou Densetsu Special - Dominated Mind (Japan).cue",
+  "cue_name": "Real Bout Garou Densetsu Special - Dominated Mind (Japan).cue",
+  "bin_name": "Real Bout Garou Densetsu Special - Dominated Mind (Japan) (Track 01).bin",
+  "track_count": 28,
+  "data_track_size": 281985984,
+  "data_track_md5": "caf7074994aeab4f9067e4e26b71d78f",
+  "data_track_sha1": "d6376364528fb02c183b3a56829ad93426d15ad9",
+  "data_track_crc32": "29703810",
+  "boot_exe": "SLPM_860.85",
+  "serial": "SLPM-86085",
+  "serial_exe": "SLPM_860.85",
+  "volume_id": "SLPM_86085",
+  "display_name": "Fatal-Fury-Dominated-Mind-",
+  "load_address": "0x80010000",
+  "entry_pc": "0x80051418",
+  "text_size": "0x0005D800",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "0e54e5bca492fc378ad673e0fa5b1ca55b8637eeb5c65bb5536389b023550ce0",
+  "boot_exe_sha256": "5d9decddb8e451cf44ac554aab14d3ce44ca406cd8d3a52f38d65fb30335aa2b",
+  "seed_count": 1357,
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

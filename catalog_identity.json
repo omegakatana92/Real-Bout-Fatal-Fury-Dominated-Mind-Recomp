@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Fatal-Fury-Dominated-Mind-",
+    "id": "SLPM-86085",
+    "boot_exe": "SLPM_860.85"
+  },
+  "marketing": {
+    "description": "Description: Native PlayStation recompilation project for Real Bout Garou Densetsu Special: Dominated Mind.",
+    "publisher": "SNK",
+    "year": "1997",
+    "region": "Japan",
+    "players": 2
+  },
+  "rom_identity": {
+    "cue_name": "Real Bout Garou Densetsu Special - Dominated Mind (Japan).cue",
+    "bin_name": "Real Bout Garou Densetsu Special - Dominated Mind (Japan) (Track 01).bin",
+    "track_counts": [
+      28
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 281985984,
+      "md5": "caf7074994aeab4f9067e4e26b71d78f",
+      "sha1": "d6376364528fb02c183b3a56829ad93426d15ad9",
+      "crc32": "29703810"
+    },
+    "disc_fp": "0e54e5bca492fc378ad673e0fa5b1ca55b8637eeb5c65bb5536389b023550ce0"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80051418",
+    "text_size": "0x0005D800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 1357,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

@@ -1,0 +1,53 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Fatal-Fury-Dominated-Mind-"
+id = "SLPM-86085"
+players = 2
+exe = "disc/SLPM_860.85"
+disc = "C:\\Users\\omega\\Documents\\tools\\psxrecomp-cli-windows-x86_64\\game\\Real Bout Garou Densetsu Special - Dominated Mind (Japan)\\Real Bout Garou Densetsu Special - Dominated Mind (Japan).cue"
+load_address = "0x80010000"
+entry_pc = "0x80051418"
+text_size = "0x0005D800"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Real Bout Garou Densetsu Special - Dominated Mind (Japan) (Track 01).bin"
+cue_name = "Real Bout Garou Densetsu Special - Dominated Mind (Japan).cue"
+boot_exe = "SLPM_860.85"
+known_sizes = [281985984]
+known_md5 = [
+  "caf7074994aeab4f9067e4e26b71d78f",
+]
+known_sha1 = [
+  "d6376364528fb02c183b3a56829ad93426d15ad9",
+]
+known_crc32 = [
+  "29703810",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "Fatal-Fury-Dominated-Mind- Recompiled"
+memcard_dir = "saves"
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 28
+required_disc_fp = "0e54e5bca492fc378ad673e0fa5b1ca55b8637eeb5c65bb5536389b023550ce0"
